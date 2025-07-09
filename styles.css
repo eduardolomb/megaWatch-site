@@ -1,0 +1,398 @@
+/* Reset e Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: #1d1d1f;
+    background-color: #ffffff;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.header {
+    background: #ffffff;
+    border-bottom: 1px solid #d2d2d7;
+    padding: 16px 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+}
+
+.logo-text {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1d1d1f;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 60px 0;
+    background: #f5f5f7;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero-logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 24px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.hero-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #1d1d1f;
+}
+
+.hero-subtitle {
+    font-size: 18px;
+    color: #86868b;
+    margin-bottom: 20px;
+}
+
+.hero-description {
+    font-size: 16px;
+    color: #1d1d1f;
+    margin-bottom: 24px;
+    line-height: 1.5;
+}
+
+.hero-rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.stars {
+    font-size: 16px;
+}
+
+.rating-text {
+    font-size: 14px;
+    color: #86868b;
+}
+
+.hero-price {
+    font-size: 24px;
+    font-weight: 600;
+    color: #1d1d1f;
+    margin-bottom: 32px;
+}
+
+.download-btn {
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.download-btn:hover {
+    transform: scale(1.05);
+}
+
+.download-btn img {
+    height: 50px;
+}
+
+.download-btn.large img {
+    height: 60px;
+}
+
+/* Screenshots Section */
+.screenshots {
+    padding: 60px 0;
+    background: #ffffff;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #1d1d1f;
+}
+
+.screenshots-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 32px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.screenshot {
+    text-align: center;
+}
+
+.screenshot img {
+    width: 125px;
+    height: 150px;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.screenshot p {
+    font-size: 14px;
+    color: #86868b;
+}
+
+/* Features Section */
+.features {
+    padding: 60px 0;
+    background: #f5f5f7;
+}
+
+.features-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 32px;
+}
+
+.feature {
+    background: #ffffff;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.feature h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #1d1d1f;
+}
+
+.feature p {
+    font-size: 14px;
+    color: #86868b;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 60px 0;
+    background: #ffffff;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+}
+
+.testimonial {
+    background: #f5f5f7;
+    padding: 24px;
+    border-radius: 12px;
+}
+
+.testimonial-rating {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.testimonial p {
+    font-size: 14px;
+    color: #1d1d1f;
+    margin-bottom: 12px;
+    font-style: italic;
+}
+
+.testimonial-author {
+    font-size: 12px;
+    color: #86868b;
+    font-weight: 500;
+}
+
+/* Info Section */
+.info {
+    padding: 60px 0;
+    background: #f5f5f7;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 16px;
+}
+
+.info-item {
+    background: #ffffff;
+    padding: 16px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.info-item strong {
+    color: #1d1d1f;
+}
+
+/* Download Section */
+.download {
+    padding: 60px 0;
+    background: #ffffff;
+    text-align: center;
+}
+
+.download-description {
+    font-size: 16px;
+    color: #86868b;
+    margin-bottom: 32px;
+}
+
+.download-note {
+    font-size: 12px;
+    color: #86868b;
+    margin-top: 20px;
+}
+
+/* Footer */
+.footer {
+    background: #1d1d1f;
+    color: #ffffff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-logo {
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+}
+
+.footer p {
+    font-size: 12px;
+    color: #86868b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 16px;
+    }
+    
+    .hero {
+        padding: 40px 0;
+    }
+    
+    .hero-title {
+        font-size: 28px;
+    }
+    
+    .hero-logo {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .section-title {
+        font-size: 24px;
+    }
+    
+    .screenshots-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .screenshot img {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .features-list {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .info-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+    
+    .features,
+    .screenshots,
+    .testimonials,
+    .info,
+    .download {
+        padding: 40px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 24px;
+    }
+    
+    .hero-logo {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .screenshots-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .screenshot img {
+        width: 140px;
+        height: 140px;
+    }
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Loading animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.6s ease-out;
+}
+
