@@ -33,16 +33,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Add click tracking for App Store button
-document.addEventListener('DOMContentLoaded', function() {
-    const appStoreButtons = document.querySelectorAll('a[href*="apps.apple.com"]');
-    
-    appStoreButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            console.log('App Store button clicked');
-        });
-    });
-});
 
 // Preload critical images
 document.addEventListener('DOMContentLoaded', function() {
@@ -56,16 +46,5 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Error handling for missing images
-document.addEventListener('DOMContentLoaded', function() {
-    const images = document.querySelectorAll('img');
-    
-    images.forEach(img => {
-        img.addEventListener('error', function() {
-            console.warn('Failed to load image:', this.src);
-            // Hide broken images
-            this.style.display = 'none';
-        });
-    });
-});
+
 
